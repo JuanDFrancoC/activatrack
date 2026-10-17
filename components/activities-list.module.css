@@ -1,0 +1,418 @@
+/* Estilos exclusivos de Mis actividades. */
+.root {
+  color: #183653;
+}
+.root :global(.activities-card) {
+  overflow: hidden;
+  border: 1px solid #e5edf6;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 24px #173c6c04;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 24px;
+  border-bottom: 1px solid #f0f4f9;
+  background: linear-gradient(110deg, #fff, #fafdff);
+}
+.headingCopy {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+.headingIcon {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #e4f0ff;
+  color: #0876ed;
+}
+.heading h1 {
+  color: #163452;
+  font-size: 27px;
+  font-weight: 750;
+  letter-spacing: -0.8px;
+}
+.heading p {
+  margin-top: 5px;
+  color: #657c95;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.heading :global(.button) {
+  min-height: 41px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  padding: 10px 17px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 3px 7px #0866de14;
+}
+.root :global(.filters-grid) {
+  grid-template-columns: 1.35fr 1.2fr 0.95fr 1fr 1fr;
+  gap: 15px;
+  padding: 23px 24px 13px;
+}
+.root :global(.field-label) {
+  color: #2d4664;
+  font-size: 12px;
+  font-weight: 700;
+}
+.root :global(.field-label input),
+.root :global(.field-label select) {
+  min-height: 40px;
+  margin-top: 7px;
+  padding: 9px 10px;
+  background: #fff;
+  border-color: #dde6f0;
+  border-radius: 6px;
+  color: #47617e;
+  font-size: 12px;
+  font-weight: 400;
+}
+.root :global(.field-label input)::placeholder {
+  color: #8193a8;
+}
+.root :global(.input-icon input) {
+  padding-left: 34px;
+}
+.root :global(.input-icon > svg) {
+  color: #7891ac;
+}
+.root :global(.results-toolbar) {
+  padding: 0 24px 14px;
+  gap: 12px;
+  color: #72849a;
+  font-size: 11px;
+}
+.root :global(.results-toolbar > span) {
+  flex-wrap: wrap;
+}
+.tools,
+.tools > label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tools {
+  flex-shrink: 0;
+}
+.root :global(.sort-select) {
+  max-width: 135px;
+  color: #47617e;
+  font-size: 11px;
+}
+.root :global(.refresh-button) {
+  width: 29px;
+  min-width: 29px;
+  height: 29px;
+  color: #337ecb;
+}
+.root :global(.clear-filters) {
+  color: #0866de;
+  font-size: 11px;
+}
+.root :global(.range-error) {
+  margin: 0 24px 12px;
+}
+.root :global(.table-wrapper) {
+  margin: 0 24px;
+}
+.root :global(.activities-table) {
+  min-width: 760px;
+  table-layout: fixed;
+}
+.root :global(.activities-table th) {
+  border-top: 1px solid #eaf0f7;
+  border-bottom: 1px solid #e8eef6;
+  padding: 12px 12px;
+  background: #f2f6fb;
+  color: #355171;
+  font-size: 12px;
+  font-weight: 700;
+}
+.root :global(.activities-table th:first-child) {
+  width: 28%;
+  padding-left: 10px;
+  border-radius: 5px 0 0 0;
+}
+.root :global(.activities-table th:nth-child(2)) {
+  width: 17%;
+}
+.root :global(.activities-table th:nth-child(3)) {
+  width: 13%;
+}
+.root :global(.activities-table th:nth-child(4)) {
+  width: 17%;
+}
+.root :global(.activities-table th:nth-child(5)) {
+  width: 12%;
+}
+.root :global(.activities-table th:last-child) {
+  width: 13%;
+  border-radius: 0 5px 0 0;
+  padding-right: 10px;
+}
+.root :global(.activities-table td) {
+  padding: 14px 12px;
+  border-bottom: 1px solid #eef2f7;
+  font-size: 12px;
+  color: #526c89;
+  line-height: 1.55;
+}
+.root :global(.activities-table td:first-child) {
+  padding-left: 5px;
+}
+.root :global(.activities-table td:last-child) {
+  padding-right: 5px;
+}
+.root :global(.activities-table tbody tr:hover) {
+  background: #f8fbff;
+}
+.root :global(.table-activity) {
+  min-width: 0;
+  gap: 12px;
+}
+.root :global(.activity-title) {
+  max-width: none;
+  color: #193957;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.root :global(.activity-title:hover) {
+  color: #0866de;
+}
+.categoryName {
+  display: inline-block;
+  overflow-wrap: anywhere;
+  color: #526c89;
+}
+.root :global(.table-activity .category-icon) {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.root :global(.category-0) {
+  color: #15966a;
+  background: #dff5eb;
+}
+.root :global(.category-1) {
+  color: #0878e8;
+  background: #e3f1ff;
+}
+.root :global(.category-2),
+.root :global(.category-3) {
+  color: #e83c4e;
+  background: #ffebee;
+}
+.root :global(.category-4) {
+  color: #7150da;
+  background: #eee8ff;
+}
+.root :global(.responsible-name) {
+  max-width: 100%;
+  color: #526c89;
+  font-size: 12px;
+}
+.root :global(.date-cell) {
+  color: #526c89;
+  font-size: 12px;
+}
+.root :global(.overdue-label) {
+  color: #94641d;
+  font-size: 10px;
+}
+.root :global(.status-badge) {
+  justify-content: center;
+  min-width: 79px;
+  padding: 5px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.root :global(.status-badge > i) {
+  display: none;
+}
+.root :global(.status-badge.pending) {
+  color: #8a630d;
+  background: #fff0c2;
+}
+.root :global(.status-badge.progress) {
+  color: #167a5b;
+  background: #d9f3e8;
+}
+.root :global(.status-badge.done) {
+  color: #486583;
+  background: #e5edf7;
+}
+.root :global(.status-badge.cancelled) {
+  color: #a43f56;
+  background: #fce7ed;
+}
+.root :global(.row-actions) {
+  gap: 3px;
+}
+.root :global(.row-actions .icon-button) {
+  min-width: 28px;
+  height: 32px;
+  color: #617b9c;
+  padding: 5px;
+  border-radius: 5px;
+}
+.root :global(.row-actions .icon-button svg) {
+  stroke-width: 2.1;
+}
+.root :global(.row-actions .edit-action) {
+  color: #0875df;
+}
+.root :global(.row-actions .delete-action) {
+  color: #e34253;
+}
+.root :global(.pagination) {
+  padding: 19px 24px;
+  color: #70839c;
+  font-size: 11px;
+}
+.root :global(.pagination strong) {
+  font-weight: 600;
+  color: #526c89;
+}
+.root :global(.pagination .icon-button) {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background: #f3f6fa;
+  border-color: #e7edf4;
+  color: #54749a;
+}
+.root :global(.current-page) {
+  min-width: 32px;
+  height: 32px;
+  border: 1px solid #0866de;
+  border-radius: 5px;
+  background: #0866de;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.root :global(.page-total) {
+  color: #70839c;
+}
+@media (max-width: 1200px) {
+  .root :global(.filters-grid) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .root :global(.filters-grid .field-label:first-child) {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 640px) {
+  .heading {
+    padding: 21px 17px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 17px;
+  }
+  .headingCopy {
+    gap: 12px;
+  }
+  .headingIcon {
+    width: 44px;
+    height: 48px;
+  }
+  .heading h1 {
+    font-size: 23px;
+  }
+  .heading p {
+    font-size: 11px;
+  }
+  .heading :global(.button) {
+    min-height: 41px;
+    width: 100%;
+    justify-content: center;
+  }
+  .root :global(.filters-grid) {
+    padding: 19px 17px 13px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 12px;
+  }
+  .root :global(.filters-grid .field-label:nth-child(2)) {
+    grid-column: auto;
+  }
+  .root :global(.field-label input),
+  .root :global(.field-label select) {
+    min-height: 44px;
+    font-size: 16px;
+  }
+  .root :global(.results-toolbar) {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 17px 16px;
+  }
+  .tools {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .root :global(.sort-select) {
+    padding: 7px 0;
+    max-width: 145px;
+    font-size: 12px;
+  }
+  .root :global(.table-wrapper) {
+    margin: 0;
+    overflow: visible;
+  }
+  .root :global(.activities-table) {
+    min-width: 0;
+    table-layout: auto;
+  }
+  .root :global(.activities-table tr) {
+    padding: 20px 17px 15px;
+    row-gap: 15px;
+    column-gap: 14px;
+  }
+  .root :global(.activities-table td) {
+    min-width: 0;
+    grid-column: auto;
+  }
+  .root :global(.activities-table td:first-child),
+  .root :global(.activities-table td:last-child) {
+    grid-column: 1 / -1;
+  }
+  .root :global(.activities-table td:not(:first-child):not(:last-child))::before {
+    display: block;
+    content: attr(data-label);
+    margin-bottom: 5px;
+    color: #72849a;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .root :global(.row-actions) {
+    padding-top: 12px;
+    border-top: 1px solid #f0f3f8;
+    gap: 9px;
+  }
+  .root :global(.row-actions .icon-button) {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border: 1px solid #e7edf4;
+  }
+  .root :global(.pagination) {
+    padding: 18px 17px;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .root :global(.range-error) {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+}
