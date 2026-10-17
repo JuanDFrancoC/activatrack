@@ -375,13 +375,18 @@
     table-layout: auto;
   }
   .root :global(.activities-table tr) {
-    padding: 20px 17px 15px;
-    row-gap: 15px;
-    column-gap: 14px;
+        gap: 15px 14px;
+        padding: 10px 10px 10px;
+        border: 1px solid #0070f3;
+        border-radius: 10px;
+        margin: 7px;
   }
   .root :global(.activities-table td) {
     min-width: 0;
     grid-column: auto;
+            display: flex;
+        gap: 5px;
+        align-items: center;
   }
   .root :global(.activities-table td:first-child),
   .root :global(.activities-table td:last-child) {
@@ -390,7 +395,6 @@
   .root :global(.activities-table td:not(:first-child):not(:last-child))::before {
     display: block;
     content: attr(data-label);
-    margin-bottom: 5px;
     color: #72849a;
     font-size: 10px;
     font-weight: 600;
