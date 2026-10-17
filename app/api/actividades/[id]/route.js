@@ -1,0 +1,7 @@
+import { handlers } from '@/lib/server';
+
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+export const GET = handlers.get;
+export const PUT = handlers.update;
+export const DELETE = handlers.remove;
